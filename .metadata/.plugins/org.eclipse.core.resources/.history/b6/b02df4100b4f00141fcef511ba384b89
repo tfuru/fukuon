@@ -1,0 +1,117 @@
+package jp.tf_web.fukuon;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
+import android.media.MediaRecorder.AudioSource;
+import android.util.Log;
+
+/**　録音データをUDPで送信
+ * 
+ * @author furukawanobuyuki
+ *
+ */
+public class SendAudioRunnable implements Runnable {
+	private static final String LOG_TAG = "SendAudioRunnable";
+	private DatagramSocket sock;
+
+	private AudioRecord audioRec = null;
+	private int bufSize;
+	private boolean isRecording = false;
+	int samplingRate;
+	
+	public SendAudioRunnable() {
+		try {
+			/*
+			// バッファサイズの計算
+			bufSize = AudioRecord.getMinBufferSize(AudioConfig.SAMPLE_RATE,
+					AudioFormat.CHANNEL_OUT_MONO,
+					AudioFormat.ENCODING_PCM_16BIT) //* AudioConfig.SAMPLE_SIZE;
+
+			// AudioRecordの作成
+			audioRec = new AudioRecord(AudioSource.DEFAULT,
+					AudioConfig.SAMPLE_RATE, AudioFormat.CHANNEL_OUT_MONO,
+					AudioFormat.ENCODING_PCM_16BIT, bufSize);
+
+			
+			//audioRec = findAudioRecord();
+			Log.e(LOG_TAG, "audioRec:"+audioRec);
+			Log.e(LOG_TAG, "samplingRate: " + samplingRate);
+			
+			this.sock = new DatagramSocket(AudioConfig.AUDIO_PORT);
+		} catch (SocketException se) {
+			Log.e(LOG_TAG, "SocketException: " + se.toString());
+		} catch (IOException ie) {
+			Log.e(LOG_TAG, "IOException" + ie.toString());
+		}
+	}
+
+	@Override
+	public void run() {
+		audioRec.startRecording();
+		isRecording = true;
+		byte[] buf = new byte[bufSize];
+		while (isRecording) {
+			// 録音データを取得
+			audioRec.read(buf, 0, buf.length);
+			try {
+				//UDPで送信
+				DatagramPacket pack = new DatagramPacket(buf, buf.length);
+				this.sock.receive(pack);
+				Log.d(LOG_TAG, "recv pack: " + pack.getLength());
+				// 一回で送信するデータ量
+				Thread.sleep(AudioConfig.SAMPLE_INTERVAL, 0);
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+		audioRec.stop();
+	}
+
+	public void stopRecording() {
+		isRecording = false;
+	}
+	
+	public AudioRecord findAudioRecord() {
+		for (int rate : AudioConfig.mSampleRates) {
+			for (short audioFormat : new short[] {
+					AudioFormat.ENCODING_PCM_8BIT,
+					AudioFormat.ENCODING_PCM_16BIT }) {
+				for (short channelConfig : new short[] {
+						AudioFormat.CHANNEL_IN_MONO,
+						AudioFormat.CHANNEL_IN_STEREO }) {
+					try {
+						Log.d("TAG", "Attempting rate " + rate + "Hz, bits: "
+								+ audioFormat + ", channel: " + channelConfig);
+						int bufferSize = AudioRecord.getMinBufferSize(rate,
+								channelConfig, audioFormat);
+
+						if (bufferSize != AudioRecord.ERROR_BAD_VALUE) {
+							// check if we can instantiate and have a success
+							AudioRecord recorder = new AudioRecord(
+									AudioSource.DEFAULT, rate, channelConfig,
+									audioFormat, bufferSize);
+
+							if (recorder.getState() == AudioRecord.STATE_INITIALIZED)
+								bufSize = bufferSize;
+							samplingRate = rate;
+							return recorder;
+						}
+					} catch (Exception e) {
+						Log.e("TAG", rate + "Exception, keep trying.", e);
+					}
+				}
+			}
+		}
+		return null;
+	}
+}

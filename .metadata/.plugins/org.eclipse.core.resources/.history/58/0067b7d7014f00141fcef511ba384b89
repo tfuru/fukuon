@@ -1,0 +1,16 @@
+package jp.tf_web.fukuonsample;
+
+import java.net.DatagramSocket;
+
+public class RecvAudioRunnable implements Runnable {
+	private static final String LOG_TAG = "RecvAudioRunnable";
+	private DatagramSocket sock;
+	private int port;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

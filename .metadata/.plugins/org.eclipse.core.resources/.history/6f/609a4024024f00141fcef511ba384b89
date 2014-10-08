@@ -1,0 +1,46 @@
+package jp.tf_web.fukuonsample;
+
+import java.io.IOException;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioRecord;
+import android.media.AudioTrack;
+import android.media.MediaRecorder;
+import android.util.Log;
+
+public class RecvAudioRunnable implements Runnable {
+	private static final String LOG_TAG = "RecvAudioRunnable";
+	private DatagramSocket sock;
+	private int bufSize;
+	
+	public RecvAudioRunnable(int port){
+		try {
+			// バッファサイズの計算
+			bufSize = AudioRecord.getMinBufferSize(AudioConfig.SAMPLE_RATE,
+					AudioFormat.CHANNEL_OUT_MONO,
+					AudioFormat.ENCODING_PCM_16BIT) * 2;
+
+			AudioTrack track = new AudioTrack(AudioManager.STREAM_MUSIC, 
+					AudioConfig.SAMPLE_RATE, AudioFormat.CHANNEL_OUT_MONO, 
+                    AudioFormat.ENCODING_PCM_16BIT, bufSize, 
+                    AudioTrack.MODE_STREAM);
+            track.play();
+
+			this.sock = new DatagramSocket(port);
+		} catch (SocketException se) {
+			Log.e(LOG_TAG, "SocketException: " + se.toString());
+		} catch (IOException ie) {
+			Log.e(LOG_TAG, "IOException" + ie.toString());
+		}
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

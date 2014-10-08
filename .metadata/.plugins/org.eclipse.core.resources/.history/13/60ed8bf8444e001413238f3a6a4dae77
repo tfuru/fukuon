@@ -1,0 +1,77 @@
+package jp.tf_web.hikariboxsample01;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
+
+
+public class MainActivity extends Activity {
+
+	//テキスト
+	private TextView txtSample;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //試し表示用 テキストエリア
+        txtSample = (TextView) findViewById(R.id.txtSample);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    
+    //リモコンキー 取得
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent e) {
+    	if(e.getAction() == KeyEvent.ACTION_UP){
+    		//キーが離された時
+    		switch(e.getKeyCode()){
+				case KeyEvent.KEYCODE_DPAD_UP:
+					//上キー
+					txtSample.setText("KEYCODE_DPAD_UP");
+					return true;
+				case KeyEvent.KEYCODE_DPAD_DOWN:
+					//下キー
+					txtSample.setText("KEYCODE_DPAD_DOWN");
+					return true;
+				case KeyEvent.KEYCODE_DPAD_LEFT:
+					//左キー
+					txtSample.setText("KEYCODE_DPAD_LEFT");
+					return true;
+				case KeyEvent.KEYCODE_DPAD_RIGHT:
+					//右キー
+					txtSample.setText("KEYCODE_DPAD_RIGHT");
+					return true;
+    			case KeyEvent.KEYCODE_DPAD_CENTER:
+    				//十字中央キー
+    				txtSample.setText("KEYCODE_DPAD_CENTER");
+    				return true;
+    			default:
+    		}
+    	}
+    	
+    	return super.dispatchKeyEvent(e);
+    }
+}
