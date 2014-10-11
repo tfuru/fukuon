@@ -1,0 +1,30 @@
+package jp.tf_web.fukuon.network.model;
+
+import java.util.List;
+
+import org.json.JSONObject;
+
+@SuppressWarnings("serial")
+public class GetUserResponse extends Response{
+
+	private List<User> userList;
+	
+	public GetUserResponse(String jsonStr) {
+		super(jsonStr);
+		try{
+			//data部分をパースする
+			srcJsonObj = new JSONArray(jsonStr);
+			JSONObject tmpData = srcJsonObj.getJSONObject("data");
+			if(tmpData != null){
+				this.setAccessToken(tmpData.getString("access_token"));
+				data.put("access_token", this.accessToken);
+				this.setUserId(tmpData.getInt("user_id"));
+				data.put("user_id", this.userId);
+			}
+		}
+		catch (JSONException e) {
+			
+		}
+	}
+
+}

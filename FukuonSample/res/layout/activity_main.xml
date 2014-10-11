@@ -50,4 +50,13 @@
         android:layout_marginTop="14dp"
         android:text="Delete User" />
 
+    <Button
+        android:id="@+id/btnGetUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDeleteUser"
+        android:layout_below="@+id/btnDeleteUser"
+        android:layout_marginTop="14dp"
+        android:text="Get User" />
+        
 </RelativeLayout>

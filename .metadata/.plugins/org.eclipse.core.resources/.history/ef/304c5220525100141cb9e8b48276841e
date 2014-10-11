@@ -1,0 +1,14 @@
+package jp.tf_web.fukuon.network.model;
+
+import java.util.List;
+
+@SuppressWarnings("serial")
+public class GetUserResponse extends Response{
+
+	private List<User> userList;
+	
+	public GetUserResponse(String jsonStr) {
+		super(jsonStr);
+	}
+
+}

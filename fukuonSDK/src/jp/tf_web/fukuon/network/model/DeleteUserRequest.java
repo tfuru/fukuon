@@ -37,7 +37,10 @@ public class DeleteUserRequest  extends Request {
 		} catch (Exception e) {
 		    Log.e(TAG, "Error Execute");
 		}
-		if(httpResp == null) return null;
+		if(httpResp == null) {
+			Response resp = new Response(Response.STATUS_ERROR,500);
+			return resp;
+		}
 		
 		Response resp = null;
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -56,13 +59,13 @@ public class DeleteUserRequest  extends Request {
 			|| (HttpStatus.SC_CREATED == status)){
 			//リクエスト成功
 			try {
-		        resp = new UserResponse(outputStream.toString());
+		        resp = new DeleteUserResponse(Response.STATUS_SUCCESS,status,outputStream.toString());
 		    } catch (Exception e) {
 		        Log.e(TAG, "Error");
 		    }
 		}else{
 			//200 以外のレスポンスの場合
-			resp = new Response(Response.STATUS_ERROR,status,null);
+			resp = new Response(Response.STATUS_ERROR,status);
 		}
 		return resp;
 	}

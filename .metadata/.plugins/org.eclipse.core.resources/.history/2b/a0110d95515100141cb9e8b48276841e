@@ -1,0 +1,10 @@
+package jp.tf_web.fukuon.network.model;
+
+public class GetUserResponse extends Response{
+
+	public GetUserResponse(String jsonStr) {
+		super(jsonStr);
+		// TODO Auto-generated constructor stub
+	}
+
+}

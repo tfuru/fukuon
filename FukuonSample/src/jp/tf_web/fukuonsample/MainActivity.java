@@ -9,6 +9,7 @@ import jp.tf_web.fukuon.SendAudioRunnable;
 import jp.tf_web.fukuon.network.NetworkAsyncTask;
 import jp.tf_web.fukuon.network.NetworkWork;
 import jp.tf_web.fukuon.network.model.DeleteUserRequest;
+import jp.tf_web.fukuon.network.model.GetUserRequest;
 import jp.tf_web.fukuon.network.model.PostUserRequest;
 import jp.tf_web.fukuon.network.model.Response;
 import jp.tf_web.fukuon.network.model.User;
@@ -62,6 +63,10 @@ public class MainActivity extends Activity {
 		
 		Button btnAddUser = (Button) findViewById(R.id.btnAddUser);
 		btnAddUser.setOnClickListener(clickBtnAddUser);
+		
+		Button btnGetUser = (Button) findViewById(R.id.btnGetUser);
+		btnGetUser.setOnClickListener(clickBtnGetUser);
+		
 	}
 
 	//IPアドレスを画面に設定
@@ -150,6 +155,7 @@ public class MainActivity extends Activity {
 			NetworkWork resultWork = new NetworkWork(){
 				@Override
 				public void response(Response resp) {
+					if(resp == null) return;
 					//ここで レスポンスからユーザー必要情報を取得する
 					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
 						//
@@ -174,6 +180,7 @@ public class MainActivity extends Activity {
 			NetworkWork resultWork = new NetworkWork(){
 				@Override
 				public void response(Response resp) {
+					if(resp == null) return;
 					//ここで レスポンスからユーザー必要情報を取得する
 					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
 						//
@@ -186,5 +193,30 @@ public class MainActivity extends Activity {
 			task.execute(req);
 		}
 	};
+	
+	//ユーザー一覧取得
+	private OnClickListener clickBtnGetUser = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			String server = "192.168.1.178"; 
+			GetUserRequest req = new GetUserRequest(server);
+			
+			NetworkWork resultWork = new NetworkWork(){
+				@Override
+				public void response(Response resp) {
+					if(resp == null) return;
+					//ここで レスポンスからユーザー必要情報を取得する
+					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
+						//
+					}
+				}
+			};
+			
+			//非同期でRequestを実行
+			NetworkAsyncTask task = new NetworkAsyncTask( resultWork );
+			task.execute(req);
+		}
+	};
+	
 	
 }

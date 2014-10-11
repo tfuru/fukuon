@@ -1,7 +1,6 @@
 package jp.tf_web.fukuon.network.model;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.Map;
 
 import org.json.JSONException;
@@ -34,18 +33,16 @@ public class Response implements Serializable {
 	//レスポンスのステータスコード
 	protected int code;
 	
-	//他データ
-	protected Map<String,Object> data;
-	
-	public Response(String status,int code,Map<String,Object> data){
+	public Response(String status,int code){
 		this.setStatus(status);
 		this.setCode(code);
-		this.setData(data);
 	}
 	
 	//レスポンスをパースして作成
-	public Response(String jsonStr){		
+	public Response(String status,int code,String jsonStr){		
 		Log.d(TAG, jsonStr);
+		this.setStatus(status);
+		this.setCode(code);
 		this.setSrcJson(jsonStr);
 		this.parse(jsonStr);
 	}
@@ -54,21 +51,6 @@ public class Response implements Serializable {
 	private void parse(String jsonStr){
 		try{
 			srcJsonObj = new JSONObject(jsonStr);
-			/*
-			if(srcJsonObj != null){
-				//パース
-				this.setStatus( this.getJsonString(srcJsonObj, "status", null) );
-				this.setCode(  this.getJsonInt(srcJsonObj, "code", null) );
-				
-				//data 部分のパース
-				JSONObject tmpData = srcJsonObj.getJSONObject("data");
-				if(tmpData != null){
-					if(data == null) data = new HashMap<String,Object>();
-					if(tmpData.getString("message") != null){
-						data.put("message", tmpData.getString("message"));
-					}
-				}
-			}*/
 		}
 		catch (JSONException e) {
 			
@@ -91,7 +73,7 @@ public class Response implements Serializable {
 	 * @return
 	 * @throws JSONException
 	 */
-	private String getJsonString(JSONObject jsonObj,String key,String def) throws JSONException{
+	public String getJsonString(JSONObject jsonObj,String key,String def) throws JSONException{
 		String str = jsonObj.getString(key);
 		return str;
 	}
@@ -104,7 +86,7 @@ public class Response implements Serializable {
 	 * @return
 	 * @throws JSONException
 	 */
-	private int getJsonInt(JSONObject jsonObj,String key,String def) throws JSONException{
+	public int getJsonInt(JSONObject jsonObj,String key,String def) throws JSONException{
 		int i = jsonObj.getInt(key);
 		return i;
 	}
@@ -120,12 +102,5 @@ public class Response implements Serializable {
 	}
 	public void setCode(int code) {
 		this.code = code;
-	}
-	public Map<String, Object> getData() {
-		return data;
-	}
-	public void setData(Map<String, Object> data) {
-		this.data = data;
-	}
-	
+	}	
 }

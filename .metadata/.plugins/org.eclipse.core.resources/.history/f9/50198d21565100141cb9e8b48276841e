@@ -1,0 +1,12 @@
+package jp.tf_web.fukuon.network.model;
+
+@SuppressWarnings("serial")
+public class PostUserResponse extends Response{
+
+	private User user;
+	
+	public PostUserResponse(String status,int code,String jsonStr) {
+		super(status,code,jsonStr);
+	}
+
+}
