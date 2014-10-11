@@ -33,4 +33,21 @@
         android:layout_marginTop="16dp"
         android:text="Play" />
 
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_centerVertical="true"
+        android:text="Add User" />
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAddUser"
+        android:layout_below="@+id/btnAddUser"
+        android:layout_marginTop="14dp"
+        android:text="Delete User" />
+
 </RelativeLayout>

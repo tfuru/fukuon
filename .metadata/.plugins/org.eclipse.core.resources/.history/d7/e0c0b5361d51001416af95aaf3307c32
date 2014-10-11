@@ -1,0 +1,10 @@
+var app = angular.module('App', []);
+
+app.controller('Ctrl', function ($scope) {
+	
+	//送信ボタンクリック時
+	$scope.clickBtnSend = function(){
+		alert("clickBtnSend");
+	};
+	
+});

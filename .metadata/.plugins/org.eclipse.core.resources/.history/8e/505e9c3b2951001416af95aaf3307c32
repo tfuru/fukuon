@@ -1,0 +1,11 @@
+package jp.tf_web.fukuon.network.model;
+
+@SuppressWarnings("serial")
+public class UserResponse extends Response{
+
+	private User user;
+	
+	public UserResponse(String jsonStr) {
+		super(jsonStr);
+	}
+}

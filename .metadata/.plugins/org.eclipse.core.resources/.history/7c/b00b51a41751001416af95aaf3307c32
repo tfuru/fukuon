@@ -1,0 +1,15 @@
+var express = require('express');
+var app = express();
+app.use(express.bodyParser());
+
+app.post('/upload', function(req, res){
+  var data = {};
+  data['name'] = req.body.name;
+  data['show_name'] = req.body.show_name;
+  data['message'] = req.body.message;
+   
+  res.set('Content-Type', 'application/json');
+  res.json(data);
+});
+
+app.listen(9000);

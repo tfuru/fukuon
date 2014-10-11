@@ -1,0 +1,87 @@
+package jp.tf_web.hikariboxsample01;
+
+import jp.tf_web.fukuon.RecvAudioRunnable;
+import android.app.Activity;
+import android.hardware.Camera;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+public class CameraActivity extends Activity implements SurfaceHolder.Callback {
+	private Camera myCamera;
+
+	//副音声スレッド
+	private Thread audioThrd;
+	private RecvAudioRunnable recvAudioRunnable;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_camera);
+
+		SurfaceView mySurfaceView = (SurfaceView) findViewById(R.id.surfaceView1);
+		SurfaceHolder holder = mySurfaceView.getHolder();
+		holder.addCallback(this);
+		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+		
+		//副音声再生
+		recvAudioPlay();
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		//ふくおん停止
+		recvAudioStop();
+	}
+
+	public boolean onDestroy(MediaPlayer mp, int what, int extra) {
+		//ふくおん停止
+		recvAudioStop();
+		return false;
+	}
+	
+	//副音声 再生
+	private void recvAudioPlay(){
+		recvAudioStop();
+		// オーディオ受信
+		this.audioThrd = new Thread(new RecvAudioRunnable(this));
+		this.audioThrd.start();
+	}
+	
+	//副音声 停止
+	private void recvAudioStop(){
+		if(this.recvAudioRunnable != null){
+			//副音声スレッド停止
+			this.recvAudioRunnable.stopPlay();
+			this.recvAudioRunnable = null;
+			this.audioThrd = null;
+		}
+	}
+	
+	@Override
+	public void surfaceChanged(SurfaceHolder holder, int format, int width,
+			int height) {
+		Camera.Parameters parameters = myCamera.getParameters();
+		parameters.setPreviewSize(width, height);
+		myCamera.setParameters(parameters);
+		myCamera.startPreview();
+	}
+
+	@Override
+	public void surfaceCreated(SurfaceHolder holder) {
+		myCamera = Camera.open();
+		try {
+			myCamera.setPreviewDisplay(holder);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void surfaceDestroyed(SurfaceHolder arg0) {
+		myCamera.release();
+		myCamera = null;
+	}
+}

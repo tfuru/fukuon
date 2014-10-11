@@ -1,0 +1,40 @@
+package jp.tf_web.fukuon.network.model;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+@SuppressWarnings("serial")
+public class UserResponse extends Response{
+
+	private User user;
+	
+	public UserResponse(String jsonStr) {
+		super(jsonStr);
+		try{
+			if(srcJsonObj == null) return;			
+			//data部分をパースする
+			int id = srcJsonObj.getInt("id");
+			User tmp = null;
+			if(id >= 0){
+				tmp = new User(id);
+				setUser( tmp );
+			}
+			else{
+				
+			}
+			setUser( user );
+			
+		}
+		catch (JSONException e) {
+			
+		}
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+}

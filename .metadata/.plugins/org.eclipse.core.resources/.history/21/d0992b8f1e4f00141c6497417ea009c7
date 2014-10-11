@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.tf_web.hikariboxsample01.MainActivity" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.00" >
+    </SurfaceView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="0.0.0.0"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kon2"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/basseball"
+            android:text="Button" />
+    </LinearLayout>
+
+</LinearLayout>

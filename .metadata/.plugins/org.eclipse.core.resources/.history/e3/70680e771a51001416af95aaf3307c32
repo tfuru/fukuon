@@ -1,0 +1,9 @@
+var server = require('json-server');
+
+server.low.db = { 
+  posts: [
+    { id: 1, body: 'foo' }
+  ]
+}
+
+server.listen(3000);

@@ -1,0 +1,8 @@
+var server = require('json-server');
+server.low.db = { 
+  user: [
+    {id:1,name:'ふるかわ',photo:'',show_name:"けいおん！ 第99話",message:"けいおん! 全部俺" },
+    {id:2,name:'ふるかわ',photo:'',show_name:"けいおん！ 第99話",message:"けいおん! 全部俺" }
+  ]
+}
+server.listen(3000);

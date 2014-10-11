@@ -1,0 +1,142 @@
+package jp.tf_web.fukuon.network.model;
+
+import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.HTTP;
+
+import android.util.Log;
+
+import com.google.gson.Gson;
+
+@SuppressWarnings("serial")
+public class UserRequest extends Request {
+	private int id;
+	private String name;
+	private String photo;
+	private String showName;
+	private String message;
+	
+	public UserRequest(int id,String name,String photo,String showName,String message){
+		this.setId( id );
+		this.setName( name );
+		this.setPhoto( photo );
+		this.setShowName(showName);
+		this.setMessage(message);
+	}
+	
+	@Override
+	public Response doInBackground() {
+		//リクエストを送信先		
+		String url = "http://192.168.1.178:3000/user";
+				
+		//URLをリクエストに設定
+		HttpPost req = new HttpPost(url);
+		
+		StringEntity entity = null;
+		try {
+			Map<String,Object> src = new HashMap<String, Object>();
+			src.put("name", this.getName());
+			src.put("photo", this.getPhoto());
+			src.put("show_name", this.getShowName());
+			src.put("message", this.getMessage());
+			
+			Gson gson = new Gson();
+			String json = gson.toJson(src);
+			
+			entity = new StringEntity( json, HTTP.UTF_8);
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		if(entity == null){
+			//Body部分を作れなかった場合
+			Response resp = new Response(Response.STATUS_ERROR,500,null);
+			return resp;
+		}
+		entity.setContentType("application/json");
+		
+		DefaultHttpClient httpClient = new DefaultHttpClient();		
+		HttpResponse httpResp = null;
+		try {
+			httpResp = httpClient.execute(req);
+		} catch (Exception e) {
+		    Log.e(TAG, "Error Execute");
+		}
+		if(httpResp == null) return null;
+		
+		Response resp = null;
+		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+		//ステータスコード取得
+		int status = httpResp.getStatusLine().getStatusCode();
+		Log.d(TAG, "status:"+status);
+		try {
+			//レスポンスを取得
+	        httpResp.getEntity().writeTo(outputStream);
+	        Log.d(TAG, "body:"+outputStream.toString());
+	    } catch (Exception e) {
+	        Log.e(TAG, "Error");
+	    }
+		
+		if((HttpStatus.SC_OK == status)
+			|| (HttpStatus.SC_CREATED == status)){
+			//リクエスト成功
+			try {
+		        resp = new AddDeviceResponse(outputStream.toString());
+		    } catch (Exception e) {
+		        Log.e(TAG, "Error");
+		    }
+		}else{
+			//200 以外のレスポンスの場合
+			resp = new Response(Response.STATUS_ERROR,status,null);
+		}
+		return resp;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
+	public String getShowName() {
+		return showName;
+	}
+
+	public void setShowName(String showName) {
+		this.showName = showName;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+}

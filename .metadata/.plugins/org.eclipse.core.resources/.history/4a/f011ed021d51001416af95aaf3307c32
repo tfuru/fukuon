@@ -1,0 +1,5 @@
+var app = angular.module('phonecatApp', []);
+
+app.controller('Ctrl', function ($scope) {
+
+});

@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.7",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "mime": "^1.2.11",
+    "path": "^0.4.9",
+    "url": "^0.10.1"
+  }
+}

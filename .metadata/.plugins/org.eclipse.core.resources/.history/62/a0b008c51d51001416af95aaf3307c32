@@ -1,0 +1,20 @@
+var app = angular.module('App', []);
+
+app.controller('Ctrl', function ($scope,$http) {
+	
+	//送信ボタンクリック時
+	$scope.clickBtnSend = function(){
+		alert("clickBtnSend");
+		var url = "/user";
+		var data = [
+			
+		];
+		$http.put(url, data).success(function(data, status, headers, config) {
+								
+  							}).
+  							error(function(data, status, headers, config) {
+  							
+							});
+	};
+	
+});

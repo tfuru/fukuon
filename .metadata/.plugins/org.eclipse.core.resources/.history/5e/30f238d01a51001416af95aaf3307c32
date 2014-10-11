@@ -1,0 +1,7 @@
+var server = require('json-server');
+server.low.db = { 
+  distributor: [
+    { id: 1, body: 'foo' }
+  ]
+}
+server.listen(3000);
