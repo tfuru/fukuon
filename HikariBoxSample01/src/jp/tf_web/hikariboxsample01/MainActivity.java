@@ -178,6 +178,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 		mp4stop();
 		// ふくおん停止
 		recvAudioStop();
+		
+		//読み込みタイマー
+		if(timerGetUsers != null){
+			timerGetUsers.cancel();
+			timerGetUsers = null;
+		}
 	}
 
 	@Override
@@ -187,6 +193,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 		mp4stop();
 		// ふくおん停止
 		recvAudioStop();
+		
+		//読み込みタイマー
+		if(timerGetUsers != null){
+			timerGetUsers.cancel();
+			timerGetUsers = null;
+		}
 	}
 
 	@Override

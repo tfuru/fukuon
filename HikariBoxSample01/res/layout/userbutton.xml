@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/UserButton"
-    android:background="@drawable/suzumiya"
     android:orientation="vertical" >
 
     <ImageView
@@ -18,7 +17,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp" >
 
             <TextView
                 android:id="@+id/txtUserButtonNameLabel"
@@ -43,7 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" >
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp" >
 
         <TextView
             android:id="@+id/txtUserButtonShowNameLabel"
@@ -51,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="番組:"
             android:textColor="#FFFFFF"
-            android:textSize="10dp" />
+            android:textSize="10dp"/>
 
         <TextView
             android:id="@+id/txtUserButtonShowName"
@@ -66,7 +67,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" >
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp" >
 
         <TextView
             android:id="@+id/txtUserButtonListenerCntLabel"
@@ -91,7 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout1"
         android:layout_alignParentLeft="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp" >
 
         <TextView
             android:id="@+id/txtUserButtonMessage"
