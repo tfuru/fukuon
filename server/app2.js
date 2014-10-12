@@ -3,8 +3,8 @@
 	//var server_ip = "192.168.1.178";
 	jsonServer.low.db = { 
 	  user: [
-	    {id:1,name:'たろう',photo:'http://192.168.1.178:8080/1.png',show_name:"けいおん！ 第99話",message:"けいおん! 全部俺"},
-	    {id:2,name:'はなこ',photo:'http://192.168.1.178:8080/2.png',show_name:"けいおん！ 第100話",message:"けいおん! わたしが歌います" }
+	    {id:1,name:'たろう',photo:'http://192.168.1.178:8080/1.png',show_name:"けいおん！ 第99話",message:"けいおん! 全部俺",show_id:1,listener_cnt:0},
+	    {id:2,name:'はなこ',photo:'http://192.168.1.178:8080/2.png',show_name:"けいおん！ 第100話",message:"けいおん! わたしが歌います",show_id:2,listener_cnt:0}
 	  ]
 	}
 	jsonServer.listen(3000);

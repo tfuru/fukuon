@@ -5,26 +5,24 @@
       "name": "たろう",
       "photo": "http://192.168.1.178:8080/1.png",
       "show_name": "けいおん！ 第99話",
-      "message": "けいおん! 全部俺"
+      "message": "けいおん! 全部俺",
+      "show_id": 1,
+      "listener_cnt": 21
     },
     {
       "id": 2,
       "name": "はなこ",
       "photo": "http://192.168.1.178:8080/2.png",
       "show_name": "けいおん！ 第100話",
-      "message": "けいおん! わたしが歌います"
+      "message": "けいおん! わたしが歌います",
+      "show_id": 2,
+      "listener_cnt": 22
     },
     {
       "message": "message",
       "show_name": "showName",
       "name": "名前",
-      "id": 4
-    },
-    {
-      "message": "message",
-      "show_name": "showName",
-      "name": "名前",
-      "id": 5
+      "id": 3
     }
   ]
 }

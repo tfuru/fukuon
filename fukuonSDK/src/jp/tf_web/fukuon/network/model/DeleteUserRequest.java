@@ -46,11 +46,11 @@ public class DeleteUserRequest  extends Request {
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		//ステータスコード取得
 		int status = httpResp.getStatusLine().getStatusCode();
-		Log.d(TAG, "status:"+status);
+		//Log.d(TAG, "status:"+status);
 		try {
 			//レスポンスを取得
 	        httpResp.getEntity().writeTo(outputStream);
-	        Log.d(TAG, "body:"+outputStream.toString());
+	        //Log.d(TAG, "body:"+outputStream.toString());
 	    } catch (Exception e) {
 	        Log.e(TAG, "Error");
 	    }

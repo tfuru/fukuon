@@ -41,10 +41,12 @@ public class PostUserRequest extends Request {
 		StringEntity entity = null;
 		try {
 			Map<String,Object> src = new HashMap<String, Object>();
+			if(u.getId() != 0) src.put("id", u.getId());
 			src.put("name", u.getName());
 			src.put("photo", u.getPhotoBase64());
 			src.put("show_name", u.getShowName());
 			src.put("message", u.getMessage());
+			src.put("listener_cnt", u.getListenerCnt());
 			
 			Gson gson = new Gson();
 			String json = gson.toJson(src);
@@ -79,11 +81,11 @@ public class PostUserRequest extends Request {
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		//ステータスコード取得
 		int status = httpResp.getStatusLine().getStatusCode();
-		Log.d(TAG, "status:"+status);
+		//Log.d(TAG, "status:"+status);
 		try {
 			//レスポンスを取得
 	        httpResp.getEntity().writeTo(outputStream);
-	        Log.d(TAG, "body:"+outputStream.toString());
+	        //Log.d(TAG, "body:"+outputStream.toString());
 	    } catch (Exception e) {
 	        Log.e(TAG, "Error");
 	    }

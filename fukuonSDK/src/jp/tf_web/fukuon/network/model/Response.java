@@ -40,7 +40,7 @@ public class Response implements Serializable {
 	
 	//レスポンスをパースして作成
 	public Response(String status,int code,String jsonStr){		
-		Log.d(TAG, jsonStr);
+		//Log.d(TAG, jsonStr);
 		this.setStatus(status);
 		this.setCode(code);
 		this.setSrcJson(jsonStr);

@@ -12,8 +12,10 @@ public class User {
 	private String name;
 	private String photo;
 	private String showName;
+	private int showId;
 	private String message;
-
+	private long listenerCnt;
+	
 	public User(){		
 	}
 	
@@ -21,19 +23,24 @@ public class User {
 		this.setId(id);
 	}
 	
-	public User(String name,String photo,String showName,String message){
+	public User(String name,String photo,String showName,int showId,String message,long listenerCnt){
 		this.setName( name );
 		this.setPhoto( photo );
 		this.setShowName(showName);
+		this.setShowId( showId );
 		this.setMessage(message);
+		this.setListenerCnt( listenerCnt );
 	}
 	
 	public User(JSONObject src){
 		try{
+			this.setId( src.getInt("id") );
 			this.setName( src.getString("name") );
 			this.setPhoto( src.getString("photo")  );
 			this.setShowName( src.getString("show_name") );
+			this.setShowId( src.getInt("show_id") );
 			this.setMessage( src.getString("message") );
+			this.setListenerCnt( src.getLong("listener_cnt") );
 		}
 		catch (JSONException e) {
 		
@@ -83,11 +90,27 @@ public class User {
 		this.showName = showName;
 	}
 
+	public int getShowId() {
+		return showId;
+	}
+
+	public void setShowId(int showId) {
+		this.showId = showId;
+	}
+
 	public String getMessage() {
 		return message;
 	}
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public long getListenerCnt() {
+		return listenerCnt;
+	}
+
+	public void setListenerCnt(long listenerCnt) {
+		this.listenerCnt = listenerCnt;
 	}
 }

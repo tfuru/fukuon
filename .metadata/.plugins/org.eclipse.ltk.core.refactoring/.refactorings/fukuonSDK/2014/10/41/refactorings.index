@@ -8,3 +8,5 @@
 1413037188288	Copy compilation unit
 1413037283736	Copy compilation unit
 1413039126747	Delete element
+1413045154777	Rename field 'listener_cnt'
+1413053527608	Encapsulate field 'showId'

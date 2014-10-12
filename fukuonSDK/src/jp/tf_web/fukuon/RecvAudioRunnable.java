@@ -3,6 +3,7 @@ package jp.tf_web.fukuon;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.SocketException;
 
 import android.content.Context;
 import android.media.AudioFormat;
@@ -32,6 +33,13 @@ public class RecvAudioRunnable implements Runnable {
 		AudioManager manager = (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
 		int vol = manager.getStreamMaxVolume(AudioManager.STREAM_VOICE_CALL);
 		manager.setStreamVolume(AudioManager.STREAM_VOICE_CALL, vol, 0);
+		
+		try {
+			this.sock = new DatagramSocket(AudioConfig.AUDIO_PORT);
+		} catch (SocketException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -42,15 +50,15 @@ public class RecvAudioRunnable implements Runnable {
 		while (this.isPlay) {
 			DatagramPacket pack = new DatagramPacket(buf, buf.length);
 			try {
-				if (sock == null) {
-					this.sock = new DatagramSocket(AudioConfig.AUDIO_PORT);
+				if(sock != null){
+					sock.receive(pack);
+					Log.d(LOG_TAG, "recv pack: " + pack.getLength());
+					track.write(pack.getData(), 0, pack.getLength());
 				}
-				sock.receive(pack);
-				Log.d(LOG_TAG, "recv pack: " + pack.getLength());
-				track.write(pack.getData(), 0, pack.getLength());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				break;
 			}
 		}
 		Log.d(LOG_TAG, "stop");
@@ -58,7 +66,7 @@ public class RecvAudioRunnable implements Runnable {
 		this.sock = null;
 	}
 
-	public void stopPlay() {
+	public synchronized void stopPlay() {
 		this.isPlay = false;
 	}
 }

@@ -149,7 +149,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View arg0) {
 			String server = "192.168.1.178"; 
-			User user = new User("名前","file://sample.jpg","showName","message");
+			User user = new User("名前","file://sample.jpg","showName",5,"message",0);
 			PostUserRequest req = new PostUserRequest(server,user);
 			
 			NetworkWork resultWork = new NetworkWork(){

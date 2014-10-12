@@ -1,0 +1,13 @@
+package jp.tf_web.hikariboxsample01;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.Button;
+
+public class UserButton extends Button {
+
+	public UserButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+	}
+
+}

@@ -9,6 +9,38 @@ package jp.tf_web.hikariboxsample01;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int message=0x7f010003;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int name=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int photo=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showName=0x7f010002;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -22,27 +54,37 @@ public final class R {
         public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int basseball=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int kon2=0x7f020002;
-        public static final int logo=0x7f020003;
-        public static final int suzumiya=0x7f020004;
+        public static final int fukuon_img_header=0x7f020000;
+        public static final int fukuon_img_kasumi=0x7f020001;
+        public static final int ic_action_name=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int suzumiya=0x7f020005;
+        public static final int tv_screen_logo=0x7f020006;
+        public static final int userbutton=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
-        public static final int button1=0x7f080003;
-        public static final int button2=0x7f080004;
-        public static final int button3=0x7f080005;
-        public static final int button4=0x7f080006;
-        public static final int button5=0x7f080007;
-        public static final int button6=0x7f080008;
+        public static final int action_settings=0x7f08000f;
+        public static final int btnUserButton1=0x7f08000e;
+        public static final int imageView1=0x7f080003;
+        public static final int linearLayout1=0x7f080008;
+        public static final int menuContainer=0x7f080005;
+        public static final int sidebarContainer=0x7f080002;
         public static final int surfaceView1=0x7f080000;
-        public static final int txtAddress=0x7f080002;
+        public static final int txtAddress=0x7f080004;
         public static final int txtAddress2=0x7f080001;
+        public static final int txtUserButtonListenerCnt=0x7f08000c;
+        public static final int txtUserButtonListenerCntLabel=0x7f08000b;
+        public static final int txtUserButtonMessage=0x7f08000d;
+        public static final int txtUserButtonName=0x7f080007;
+        public static final int txtUserButtonNameLabel=0x7f080006;
+        public static final int txtUserButtonShowName=0x7f08000a;
+        public static final int txtUserButtonShowNameLabel=0x7f080009;
     }
     public static final class layout {
         public static final int activity_camera=0x7f030000;
         public static final int activity_main=0x7f030001;
+        public static final int userbutton=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -101,5 +143,84 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050001;
+        public static final int MenuContainer=0x7f050002;
+        public static final int UserButton=0x7f050003;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a UserButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #UserButton_message jp.tf_web.hikariboxsample01:message}</code></td><td></td></tr>
+           <tr><td><code>{@link #UserButton_name jp.tf_web.hikariboxsample01:name}</code></td><td></td></tr>
+           <tr><td><code>{@link #UserButton_photo jp.tf_web.hikariboxsample01:photo}</code></td><td></td></tr>
+           <tr><td><code>{@link #UserButton_showName jp.tf_web.hikariboxsample01:showName}</code></td><td></td></tr>
+           </table>
+           @see #UserButton_message
+           @see #UserButton_name
+           @see #UserButton_photo
+           @see #UserButton_showName
+         */
+        public static final int[] UserButton = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link jp.tf_web.hikariboxsample01.R.attr#message}
+          attribute's value can be found in the {@link #UserButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name jp.tf_web.hikariboxsample01:message
+        */
+        public static final int UserButton_message = 3;
+        /**
+          <p>This symbol is the offset where the {@link jp.tf_web.hikariboxsample01.R.attr#name}
+          attribute's value can be found in the {@link #UserButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name jp.tf_web.hikariboxsample01:name
+        */
+        public static final int UserButton_name = 0;
+        /**
+          <p>This symbol is the offset where the {@link jp.tf_web.hikariboxsample01.R.attr#photo}
+          attribute's value can be found in the {@link #UserButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name jp.tf_web.hikariboxsample01:photo
+        */
+        public static final int UserButton_photo = 1;
+        /**
+          <p>This symbol is the offset where the {@link jp.tf_web.hikariboxsample01.R.attr#showName}
+          attribute's value can be found in the {@link #UserButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name jp.tf_web.hikariboxsample01:showName
+        */
+        public static final int UserButton_showName = 2;
+    };
 }
