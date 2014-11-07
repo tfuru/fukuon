@@ -66,9 +66,6 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 		{
 			put("show1", "ring.mp4");
 			put("show2", "gacchiri.mp4");
-			put("show3", "vtOGSdZ1gU.mp4");
-			put("show4", "suzumiya.mp4");
-
 		}
 	};
 	

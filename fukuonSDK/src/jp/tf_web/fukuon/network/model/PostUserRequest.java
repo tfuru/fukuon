@@ -45,6 +45,7 @@ public class PostUserRequest extends Request {
 			src.put("name", u.getName());
 			src.put("photo", u.getPhotoBase64());
 			src.put("show_name", u.getShowName());
+			src.put("show_id", u.getShowId());
 			src.put("message", u.getMessage());
 			src.put("listener_cnt", u.getListenerCnt());
 			

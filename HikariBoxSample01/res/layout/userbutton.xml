@@ -4,6 +4,14 @@
     android:orientation="vertical" >
 
     <ImageView
+        android:id="@+id/imgUserPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kon2"
+         />
+
+    <ImageView
         android:id="@+id/imageView1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.view.KeyEvent"/>
-<fullyQualifiedTypeName name="android.os.Build"/>
-<fullyQualifiedTypeName name="android.widget.FrameLayout"/>
 <fullyQualifiedTypeName name="android.media.AudioRecord"/>
 <fullyQualifiedTypeName name="android.media.AudioFormat"/>
 <fullyQualifiedTypeName name="android.media.MediaRecorder"/>
@@ -38,7 +35,6 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="android.graphics.Bitmap"/>
-<fullyQualifiedTypeName name="jp.tf_web.fukuon.CommonUtil"/>
 <fullyQualifiedTypeName name="org.apache.http.client.methods.HttpDelete"/>
 <fullyQualifiedTypeName name="org.json.JSONObject"/>
 <fullyQualifiedTypeName name="jp.tf_web.fukuon.network.model.PostUserRequest"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="android.widget.ImageButton"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.apache.http.client.methods.HttpPut"/>
+<fullyQualifiedTypeName name="jp.tf_web.fukuon.network.model.PutUserRequest"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="jp.tf_web.fukuon.CommonUtil"/>
+<fullyQualifiedTypeName name="jp.tf_web.fukuon.network.model.PostUserResponse"/>
 </qualifiedTypeNameHistroy>

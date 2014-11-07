@@ -11,6 +11,7 @@ import jp.tf_web.fukuon.network.NetworkWork;
 import jp.tf_web.fukuon.network.model.DeleteUserRequest;
 import jp.tf_web.fukuon.network.model.GetUserRequest;
 import jp.tf_web.fukuon.network.model.PostUserRequest;
+import jp.tf_web.fukuon.network.model.PostUserResponse;
 import jp.tf_web.fukuon.network.model.Response;
 import jp.tf_web.fukuon.network.model.User;
 import android.app.Activity;
@@ -145,6 +146,7 @@ public class MainActivity extends Activity {
 	};
 
 	//ユーザー追加
+	User loginUser = null;
 	private OnClickListener clickBtnAddUser = new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
@@ -159,6 +161,8 @@ public class MainActivity extends Activity {
 					//ここで レスポンスからユーザー必要情報を取得する
 					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
 						//
+						PostUserResponse postUserResponse = (PostUserResponse)resp;
+						loginUser = postUserResponse.getUser();
 					}
 				}
 			};
@@ -173,9 +177,9 @@ public class MainActivity extends Activity {
 	private OnClickListener clickBtnDeleteUser = new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
+			if( loginUser == null) return;
 			String server = "192.168.1.178"; 
-			User user = new User(3);
-			DeleteUserRequest req = new DeleteUserRequest(server,user);
+			DeleteUserRequest req = new DeleteUserRequest(server,loginUser);
 			
 			NetworkWork resultWork = new NetworkWork(){
 				@Override
