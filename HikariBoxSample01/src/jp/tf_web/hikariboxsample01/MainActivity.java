@@ -70,8 +70,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 	};
 	
 	//サーバ
-	private String server = "192.168.1.178";
-
+	//private String server = "192.168.1.178";
+	private String server = "nodejs.moe.hm";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

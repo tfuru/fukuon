@@ -1,8 +1,0 @@
-package jp.tf_web.fukuon;
-
-public class AudioConfig {
-	public static final int AUDIO_PORT = 2048;
-	public static final int SAMPLE_RATE = 8000;
-	public static final int SAMPLE_INTERVAL = 3; // milliseconds
-	public static final int SAMPLE_SIZE = 2; // bytes per sample	
-}

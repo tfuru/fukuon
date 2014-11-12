@@ -1,8 +1,0 @@
-package jp.tf_web.hikariboxsample01;
-
-import android.app.Activity;
-import android.view.SurfaceHolder;
-
-public class CameraActivity extends Activity implements SurfaceHolder.Callback {
-
-}

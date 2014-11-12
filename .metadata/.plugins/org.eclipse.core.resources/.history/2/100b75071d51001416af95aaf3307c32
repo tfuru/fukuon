@@ -1,9 +1,0 @@
-var app = angular.module('phonecatApp', []);
-
-app.controller('Ctrl', function ($scope) {
-	
-	//送信ボタンクリック時
-	$scope.clickBtnSend = function(){
-	
-	};
-});

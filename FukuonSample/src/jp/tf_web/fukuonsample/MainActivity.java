@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 		//送信先アドレスを設定する
 		InetAddress addr = null;
 		try {
-			addr = InetAddress.getByName("192.168.1.129");
+			addr = InetAddress.getByName("127.0.0.1");
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 			Log.e(LOG_TAG, e.toString());
@@ -150,7 +150,7 @@ public class MainActivity extends Activity {
 	private OnClickListener clickBtnAddUser = new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
-			String server = "192.168.1.178"; 
+			String server = "nodejs.moe.hm"; 
 			User user = new User("名前","file://sample.jpg","showName",5,"message",0);
 			PostUserRequest req = new PostUserRequest(server,user);
 			
@@ -178,7 +178,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View arg0) {
 			if( loginUser == null) return;
-			String server = "192.168.1.178"; 
+			String server = "nodejs.moe.hm"; 
 			DeleteUserRequest req = new DeleteUserRequest(server,loginUser);
 			
 			NetworkWork resultWork = new NetworkWork(){
@@ -202,7 +202,7 @@ public class MainActivity extends Activity {
 	private OnClickListener clickBtnGetUser = new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
-			String server = "192.168.1.178"; 
+			String server = "nodejs.moe.hm"; 
 			GetUserRequest req = new GetUserRequest(server);
 			
 			NetworkWork resultWork = new NetworkWork(){
