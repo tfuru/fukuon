@@ -1,0 +1,2046 @@
+16:21:06 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+16:35:03 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+16:39:34 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+16:39:50 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+16:39:59 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+16:40:06 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+17:43:22 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+17:43:43 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+17:44:04 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+17:47:24 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+17:48:33 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+17:48:46 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+17:54:00 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+17:54:13 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+17:55:11 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+18:17:55 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+18:18:13 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+18:23:22 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+18:24:22 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+18:24:32 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+18:40:27 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+18:40:34 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+20:26:37 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:44:4: warning: assignment makes pointer from integer without a cast [enabled by default]
+  c = avcodec_alloc_context();
+    ^
+jni/FFmpegUtil.c:50:29: error: 'AVCODEC_MAX_AUDIO_FRAME_SIZE' undeclared (first use in this function)
+  outbuf = (uint8_t *)malloc(AVCODEC_MAX_AUDIO_FRAME_SIZE);
+                             ^
+jni/FFmpegUtil.c:50:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+20:28:15 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:46:4: warning: assignment makes pointer from integer without a cast [enabled by default]
+  c = avcodec_alloc_context();
+    ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+jni/FFmpegUtil.c:46: error: undefined reference to 'avcodec_alloc_context'
+jni/FFmpegUtil.c:48: error: undefined reference to 'avcodec_open'
+collect2: error: ld returned 1 exit status
+make: *** [obj/local/armeabi/libFFmpegUtil.so] Error 1
+20:29:08 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:46:4: warning: assignment makes pointer from integer without a cast [enabled by default]
+  c = avcodec_alloc_context(codec);
+    ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+jni/FFmpegUtil.c:46: error: undefined reference to 'avcodec_alloc_context'
+jni/FFmpegUtil.c:48: error: undefined reference to 'avcodec_open'
+collect2: error: ld returned 1 exit status
+make: *** [obj/local/armeabi/libFFmpegUtil.so] Error 1
+20:29:23 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+jni/FFmpegUtil.c:48: error: undefined reference to 'avcodec_open'
+collect2: error: ld returned 1 exit status
+make: *** [obj/local/armeabi/libFFmpegUtil.so] Error 1
+20:33:19 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+20:40:03 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+jni/FFmpegUtil.c:56: error: undefined reference to 'avcodec_decode_audio2'
+collect2: error: ld returned 1 exit status
+make: *** [obj/local/armeabi/libFFmpegUtil.so] Error 1
+20:53:14 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:49:30: error: 'optionsDict' undeclared (first use in this function)
+  if(avcodec_open2(c, codec, &optionsDict)<0){
+                              ^
+jni/FFmpegUtil.c:49:30: note: each undeclared identifier is reported only once for each function it appears in
+jni/FFmpegUtil.c:54:2: warning: 'avcodec_decode_audio3' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4057) [-Wdeprecated-declarations]
+  avcodec_decode_audio3(c, (int16_t *)pcm, &have_data, arrSrc, 9);
+  ^
+jni/FFmpegUtil.c:54:38: error: 'pcm' undeclared (first use in this function)
+  avcodec_decode_audio3(c, (int16_t *)pcm, &have_data, arrSrc, 9);
+                                      ^
+jni/FFmpegUtil.c:54:2: warning: passing argument 4 of 'avcodec_decode_audio3' from incompatible pointer type [enabled by default]
+  avcodec_decode_audio3(c, (int16_t *)pcm, &have_data, arrSrc, 9);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4057:26: note: expected 'struct AVPacket *' but argument is of type 'jbyte *'
+ attribute_deprecated int avcodec_decode_audio3(AVCodecContext *avctx, int16_t *samples,
+                          ^
+jni/FFmpegUtil.c:54:2: error: too many arguments to function 'avcodec_decode_audio3'
+  avcodec_decode_audio3(c, (int16_t *)pcm, &have_data, arrSrc, 9);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4057:26: note: declared here
+ attribute_deprecated int avcodec_decode_audio3(AVCodecContext *avctx, int16_t *samples,
+                          ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+20:59:24 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:00:15 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:03:08 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:03:25 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:17:53 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:18:10 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:19:18 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+21:19:55 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+21:20:13 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+21:20:20 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+21:21:41 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:21:58 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+21:22:10 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:22:17 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:41:23 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:41:30 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+21:42:19 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:00:21 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:00:26 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  audio_frame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audio_frame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audio_frame, gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 3 of 'avcodec_decode_audio4' makes pointer from integer without a cast [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audio_frame, gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'int *' but argument is of type 'int'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:00:36 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:01:37 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:02:01 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  audio_frame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audio_frame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audio_frame, gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 3 of 'avcodec_decode_audio4' makes pointer from integer without a cast [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audio_frame, gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'int *' but argument is of type 'int'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:02:21 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:03:15 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:03:23 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  audio_frame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audio_frame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audio_frame, &gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:03:31 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:03:42 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:06:47 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:07:04 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:07:21 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: error: 'audio_frame' undeclared (first use in this function)
+  audio_frame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:60:2: note: each undeclared identifier is reported only once for each function it appears in
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audio_frame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audioFrame, &gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+jni/FFmpegUtil.c:65:52: error: request for member 'data' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",audioFrame.data[0], audioFrame.linesize[0]);
+                                                    ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+jni/FFmpegUtil.c:65:72: error: request for member 'linesize' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",audioFrame.data[0], audioFrame.linesize[0]);
+                                                                        ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+22:07:41 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  audioFrame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audioFrame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audioFrame, &gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+jni/FFmpegUtil.c:65:52: error: request for member 'data' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",audioFrame.data[0], audioFrame.linesize[0]);
+                                                    ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+jni/FFmpegUtil.c:65:72: error: request for member 'linesize' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",audioFrame.data[0], audioFrame.linesize[0]);
+                                                                        ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+22:08:28 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  audioFrame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:61:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(audioFrame);
+  ^
+jni/FFmpegUtil.c:63:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &audioFrame, &gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:08:38 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:10:18 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:10:32 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:59:2: warning: 'avcodec_alloc_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3599) [-Wdeprecated-declarations]
+  decodedFrame = avcodec_alloc_frame();
+  ^
+jni/FFmpegUtil.c:59:15: error: incompatible types when assigning to type 'AVFrame' from type 'struct AVFrame *'
+  decodedFrame = avcodec_alloc_frame();
+               ^
+jni/FFmpegUtil.c:60:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:60:2: error: incompatible type for argument 1 of 'avcodec_get_frame_defaults'
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609:6: note: expected 'struct AVFrame *' but argument is of type 'AVFrame'
+ void avcodec_get_frame_defaults(AVFrame *frame);
+      ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+22:11:02 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:21:39 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'naPcm2Ogg':
+jni/FFmpegUtil.c:65:2: warning: passing argument 2 of 'avcodec_decode_audio4' from incompatible pointer type [enabled by default]
+  int consumedBytes = avcodec_decode_audio4(c, &decodedFrame, &gotFrame, &avpkt);
+  ^
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:4110:5: note: expected 'struct AVFrame *' but argument is of type 'struct AVFrame **'
+ int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+     ^
+jni/FFmpegUtil.c:67:54: error: request for member 'data' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",decodedFrame.data[0], decodedFrame.linesize[0]);
+                                                      ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+jni/FFmpegUtil.c:67:76: error: request for member 'linesize' in something not a structure or union
+  LOGI("decodedFrame data:%d linesize:%d",decodedFrame.data[0], decodedFrame.linesize[0]);
+                                                                            ^
+jni/FFmpegUtil.c:14:51: note: in definition of macro 'LOGI'
+ #define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+                                                   ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+22:22:12 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:24:19 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:24:39 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:24:48 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:26:24 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:27:05 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:27:13 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:27:24 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:27:32 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:28:19 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:28:27 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:28:45 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:40:05 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:40:11 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:40:25 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:44:50 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:44:59 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:45:14 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:46:54 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+22:46:58 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+22:47:07 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:17:05 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:17:12 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:28:49 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:28:57 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:31:27 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:31:33 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:44:40 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:44:45 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:53:20 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+23:53:35 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:79:40: error: 'oggArr' undeclared (first use in this function)
+  (*env)->ReleaseByteArrayElements(env, oggArr, arrDst, 0);
+                                        ^
+jni/FFmpegUtil.c:79:40: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+23:54:24 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:54:35 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:58:44 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:67:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:58:54 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+23:58:59 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:00:49 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+00:01:05 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+00:01:24 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:67:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:01:31 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:05:15 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:54:2: warning: passing argument 1 of 'avformat_find_stream_info' from incompatible pointer type [enabled by default]
+  if(avformat_find_stream_info(c, NULL)<0){
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2052:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);
+     ^
+jni/FFmpegUtil.c:70:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:05:24 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:05:29 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:07:37 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:54:2: warning: passing argument 1 of 'avformat_find_stream_info' from incompatible pointer type [enabled by default]
+  if(avformat_find_stream_info(c, NULL)<0){
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2052:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);
+     ^
+jni/FFmpegUtil.c:67:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:70:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:07:46 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:07:51 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:09:17 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+00:09:21 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:54:2: warning: passing argument 1 of 'avformat_find_stream_info' from incompatible pointer type [enabled by default]
+  if(avformat_find_stream_info(c, NULL)<0){
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2052:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);
+     ^
+jni/FFmpegUtil.c:67:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:69:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:12:46 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:54:2: warning: passing argument 1 of 'avformat_find_stream_info' from incompatible pointer type [enabled by default]
+  if(avformat_find_stream_info(c, NULL)<0){
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2052:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);
+     ^
+jni/FFmpegUtil.c:67:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:69:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:83:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(&decodedFrame);
+  ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:19:53 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:39:2: error: stray '\302' in program
+  AVFormatContext *formatCtx;
+  ^
+jni/FFmpegUtil.c:39:2: error: stray '\240' in program
+jni/FFmpegUtil.c:49:2: error: stray '\302' in program
+  if(!(formatCtx = avformat_alloc_context())){
+  ^
+jni/FFmpegUtil.c:49:2: error: stray '\240' in program
+jni/FFmpegUtil.c:49:2: error: stray '\302' in program
+jni/FFmpegUtil.c:49:2: error: stray '\240' in program
+jni/FFmpegUtil.c:51:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:51:3: error: stray '\240' in program
+jni/FFmpegUtil.c:53:2: error: stray '\302' in program
+  if(avformat_find_stream_info(formatCtx, NULL)<0){
+  ^
+jni/FFmpegUtil.c:53:2: error: stray '\240' in program
+jni/FFmpegUtil.c:55:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:55:3: error: stray '\240' in program
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:79:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(&decodedFrame);
+  ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+00:20:28 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+00:20:34 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:51:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:51:3: error: stray '\240' in program
+jni/FFmpegUtil.c:53:2: error: stray '\302' in program
+  if(avformat_find_stream_info(formatCtx, NULL)<0){
+  ^
+jni/FFmpegUtil.c:53:2: error: stray '\240' in program
+jni/FFmpegUtil.c:55:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:55:3: error: stray '\240' in program
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:79:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(&decodedFrame);
+  ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+00:20:51 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:51:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:51:3: error: stray '\240' in program
+jni/FFmpegUtil.c:53:2: error: stray '\302' in program
+  if(avformat_find_stream_info(formatCtx, NULL)<0){
+  ^
+jni/FFmpegUtil.c:53:2: error: stray '\240' in program
+jni/FFmpegUtil.c:55:3: error: stray '\302' in program
+   return -1;
+   ^
+jni/FFmpegUtil.c:55:3: error: stray '\240' in program
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:79:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(decodedFrame);
+  ^
+jni/FFmpegUtil.c:93:2: warning: passing argument 1 of 'avcodec_free_frame' from incompatible pointer type [enabled by default]
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624:6: note: expected 'struct AVFrame **' but argument is of type 'struct AVFrame *'
+ void avcodec_free_frame(AVFrame **frame);
+      ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+00:21:38 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:53:2: error: stray '\302' in program
+  if(avformat_find_stream_info(formatCtx, NULL)<0){
+  ^
+jni/FFmpegUtil.c:53:2: error: stray '\240' in program
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:79:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(decodedFrame);
+  ^
+jni/FFmpegUtil.c:93:2: warning: passing argument 1 of 'avcodec_free_frame' from incompatible pointer type [enabled by default]
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624:6: note: expected 'struct AVFrame **' but argument is of type 'struct AVFrame *'
+ void avcodec_free_frame(AVFrame **frame);
+      ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+00:21:57 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:79:2: warning: passing argument 1 of 'av_read_frame' from incompatible pointer type [enabled by default]
+  while(av_read_frame(c, &avpkt)>=0) {
+  ^
+In file included from jni/FFmpegUtil.c:4:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavformat/avformat.h:2121:5: note: expected 'struct AVFormatContext *' but argument is of type 'struct AVCodecContext *'
+ int av_read_frame(AVFormatContext *s, AVPacket *pkt);
+     ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(decodedFrame);
+  ^
+jni/FFmpegUtil.c:93:2: warning: passing argument 1 of 'avcodec_free_frame' from incompatible pointer type [enabled by default]
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624:6: note: expected 'struct AVFrame **' but argument is of type 'struct AVFrame *'
+ void avcodec_free_frame(AVFrame **frame);
+      ^
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:22:15 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:77:2: warning: 'avcodec_get_frame_defaults' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3609) [-Wdeprecated-declarations]
+  avcodec_get_frame_defaults(decodedFrame);
+  ^
+jni/FFmpegUtil.c:93:2: warning: 'avcodec_free_frame' is deprecated (declared at /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624) [-Wdeprecated-declarations]
+  avcodec_free_frame(decodedFrame);
+  ^
+jni/FFmpegUtil.c:93:2: warning: passing argument 1 of 'avcodec_free_frame' from incompatible pointer type [enabled by default]
+In file included from jni/FFmpegUtil.c:3:0:
+/Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:3624:6: note: expected 'struct AVFrame **' but argument is of type 'struct AVFrame *'
+ void avcodec_free_frame(AVFrame **frame);
+      ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:22:20 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:30:40 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:30:48 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:32:27 **** Clean-only build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build clean 
+[armeabi] Clean          : FFmpegUtil [armeabi]
+[armeabi] Clean          : avcodec [armeabi]
+[armeabi] Clean          : avfilter [armeabi]
+[armeabi] Clean          : avformat [armeabi]
+[armeabi] Clean          : avutil [armeabi]
+[armeabi] Clean          : stdc++ [armeabi]
+[armeabi] Clean          : swscale [armeabi]
+[armeabi] Clean          : wsresample [armeabi]
+00:32:30 **** Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:114:56: error: 'f' undeclared (first use in this function)
+                         AUDIO_INBUF_SIZE - avpkt.size, f);
+                                                        ^
+jni/FFmpegUtil.c:114:56: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+00:33:11 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] Prebuilt       : libavformat-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavcodec-56.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswscale-3.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavutil-54.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libavfilter-5.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] Prebuilt       : libswresample-1.so <= <NDK>/sources/ffmpeg-2.5.3/android/arm/lib/
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:33:24 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:40:40 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:40:45 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:48:09 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:98:21: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+                     memcpy(decoded_frame->data[ch] + data_size*i,arrDst[j],data_size);
+                     ^
+In file included from /Applications/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/stdlib.h:40:0,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/common.h:39,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/avutil.h:289,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/samplefmt.h:24,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:31,
+                 from jni/FFmpegUtil.c:3:
+/Applications/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/string.h:41:15: note: expected 'const void *' but argument is of type 'jbyte'
+ extern void*  memcpy(void *, const void *, size_t);
+               ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:48:57 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:98:21: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+                     memcpy(arrDst[j],decoded_frame->data[ch] + data_size*i,data_size);
+                     ^
+In file included from /Applications/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/stdlib.h:40:0,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/common.h:39,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/avutil.h:289,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavutil/samplefmt.h:24,
+                 from /Applications/android-ndk-r10d/sources/ffmpeg-2.5.3/android/arm/include/libavcodec/avcodec.h:31,
+                 from jni/FFmpegUtil.c:3:
+/Applications/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/string.h:41:15: note: expected 'void *' but argument is of type 'jbyte'
+ extern void*  memcpy(void *, const void *, size_t);
+               ^
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:49:02 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:49:57 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:50:03 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:50:09 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:52:45 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:54:46 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:55:14 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:55:20 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+00:56:39 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:00:52 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:00:59 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:06:51 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:07:33 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:08:01 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:09:04 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+jni/FFmpegUtil.c: In function 'mp32pcm':
+jni/FFmpegUtil.c:27:57: error: 'b' undeclared (first use in this function)
+  jbyte* arrSrc=(*env)->GetByteArrayElements(env,mp3Arr,&b);
+                                                         ^
+jni/FFmpegUtil.c:27:57: note: each undeclared identifier is reported only once for each function it appears in
+jni/FFmpegUtil.c: In function 'pcm2mp3':
+jni/FFmpegUtil.c:130:57: error: 'b' undeclared (first use in this function)
+  jbyte* arrSrc=(*env)->GetByteArrayElements(env,pcmArr,&b);
+                                                         ^
+make: *** [obj/local/armeabi/objs/FFmpegUtil/FFmpegUtil.o] Error 1
+01:10:13 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Compile thumb  : FFmpegUtil <= FFmpegUtil.c
+[armeabi] SharedLibrary  : libFFmpegUtil.so
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+01:13:59 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so

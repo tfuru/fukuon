@@ -58,5 +58,14 @@
         android:layout_below="@+id/btnDeleteUser"
         android:layout_marginTop="14dp"
         android:text="Get User" />
-        
+       
+     <Button
+        android:id="@+id/btnPcm2Ogg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGetUser"
+        android:layout_below="@+id/btnGetUser"
+        android:layout_marginTop="14dp"
+        android:text="Pcm2Ogg" />
+     
 </RelativeLayout>

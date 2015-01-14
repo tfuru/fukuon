@@ -1,0 +1,146 @@
+// FFmpegUtil.c
+
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+#include <libavutil/pixfmt.h>
+
+#include <stdio.h>
+#include <pthread.h>
+
+#include <jni.h>
+
+#define LOG_TAG "android-ffmpeg-FFmpegUtil"
+#define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+#define LOGE(...) __android_log_print(6, LOG_TAG, __VA_ARGS__);
+#define	NUM_ARRAY_ELEMENTS(p)		((int) sizeof(p) / sizeof(p[0]))
+
+#define INBUF_SIZE 4096
+#define AUDIO_INBUF_SIZE 20480
+#define AUDIO_REFILL_THRESH 4096
+
+jint mp32pcm(JNIEnv *env, jobject pObj,jbyteArray mp3Arr, jbyteArray pcmArr) {
+	// Register all formats and codecs
+	av_register_all();
+
+	jboolean b;
+	int i,j,nSize;
+
+	jbyte* arrSrc=(*env)->GetByteArrayElements(env,mp3Arr,&b);
+	jbyte* arrDst=(*env)->GetByteArrayElements(env,pcmArr,&b);
+	nSize = (*env)->GetArrayLength(env,mp3Arr);
+
+	LOGI("src nSize:%d",nSize);
+	for(i=0; i<nSize; ++i) {
+		arrDst[i] = arrSrc[i];
+	}
+
+	//mp3をpcmに変換する
+    AVCodec *codec;
+    AVCodecContext *c= NULL;
+    int len;
+    uint8_t inbuf[AUDIO_INBUF_SIZE + FF_INPUT_BUFFER_PADDING_SIZE];
+    AVPacket avpkt;
+    AVFrame *decoded_frame = NULL;
+    av_init_packet(&avpkt);
+
+    /* find the mpeg audio decoder */
+    codec = avcodec_find_decoder(AV_CODEC_ID_MP2);
+    if (!codec) {
+    	LOGI("Codec not found");
+        return -1;
+    }
+
+    c = avcodec_alloc_context3(codec);
+    if (!c) {
+    	LOGI("Could not allocate audio codec context");
+    	return -1;
+    }
+
+    /* open it */
+    if (avcodec_open2(c, codec, NULL) < 0) {
+    	LOGI("Could not open codec");
+        return -1;
+    }
+
+    /* decode until eof */
+    avpkt.data = arrSrc;
+    avpkt.size = nSize;
+
+    while (avpkt.size > 0) {
+        int i, ch;
+        int got_frame = 0;
+
+        if (!decoded_frame) {
+            if (!(decoded_frame = av_frame_alloc())) {
+            	LOGI("Could not allocate audio frame");
+                return -1;
+            }
+        }
+
+        len = avcodec_decode_audio4(c, decoded_frame, &got_frame, &avpkt);
+        if (len < 0) {
+        	LOGI("Error while decoding");
+            return -1;
+        }
+        if (got_frame) {
+            /* if a frame has been decoded, output it */
+            int data_size = av_get_bytes_per_sample(c->sample_fmt);
+            if (data_size < 0) {
+                /* This should not occur, checking just for paranoia */
+            	LOGI("Failed to calculate data size");
+                return -1;
+            }
+            for (i=0; i<decoded_frame->nb_samples; i++){
+                for (ch=0; ch<c->channels; ch++){
+                    //fwrite(decoded_frame->data[ch] + data_size*i, 1, data_size, outfile);
+                    LOGI("write data_size:%d",data_size);
+                    memcpy(decoded_frame->data[ch] + data_size*i,arrDst[j],data_size);
+                    j += data_size;
+                }
+            }
+        }
+        avpkt.size -= len;
+        avpkt.data += len;
+        avpkt.dts =
+        avpkt.pts = AV_NOPTS_VALUE;
+        if (avpkt.size < AUDIO_REFILL_THRESH) {
+            /* Refill the input buffer, to avoid trying to decode
+             * incomplete frames. Instead of this, one could also use
+             * a parser, or use a proper container format through
+             * libavformat. */
+            memmove(inbuf, avpkt.data, avpkt.size);
+            avpkt.data = inbuf;
+            //len = fread(avpkt.data + avpkt.size, 1, AUDIO_INBUF_SIZE - avpkt.size, f);
+            //if (len > 0) avpkt.size += len;
+            break;
+        }
+    }
+
+    avcodec_close(c);
+    av_free(c);
+    av_frame_free(&decoded_frame);
+
+	(*env)->ReleaseByteArrayElements(env, mp3Arr, arrSrc, 0);
+	(*env)->ReleaseByteArrayElements(env, pcmArr, arrDst, 0);
+
+	return 0;
+}
+
+
+jint JNI_OnLoad(JavaVM* pVm, void* reserved) {
+	JNIEnv* env;
+	if ((*pVm)->GetEnv(pVm, (void **)&env, JNI_VERSION_1_6) != JNI_OK) {
+		 return -1;
+	}
+
+	JNINativeMethod nm[1];
+	nm[0].name = "mp32pcm";
+	nm[0].signature = "([B[B)I";
+	nm[0].fnPtr = (void*)mp32pcm;
+
+	jclass cls = (*env)->FindClass(env, "jp/tf_web/fukuon/FFmpegUtil");
+	//Register methods with env->RegisterNatives.
+	(*env)->RegisterNatives(env, cls, nm, NUM_ARRAY_ELEMENTS(nm));
+	return JNI_VERSION_1_6;
+}

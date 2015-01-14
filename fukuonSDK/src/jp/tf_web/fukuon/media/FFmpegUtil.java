@@ -1,0 +1,19 @@
+package jp.tf_web.fukuon.media;
+
+public class FFmpegUtil {
+	//mp3形式をpcm形式に変換する
+	public static native int mp32pcm(byte mp3[], byte pcm[]);
+	
+	//pcmをmp3に変換する
+	public static native int pcm2mp3(byte pcm[], byte mp3[]);
+	
+    static {
+    	System.loadLibrary("avutil-54");
+        System.loadLibrary("avcodec-56");
+        System.loadLibrary("avformat-56");
+        System.loadLibrary("avfilter-5");
+        System.loadLibrary("swscale-3");
+        System.loadLibrary("swresample-1");
+    	System.loadLibrary("FFmpegUtil");
+    }
+}

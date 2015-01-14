@@ -1,0 +1,52 @@
+extern "C"{
+
+#ifdef __cplusplus
+ #define __STDC_CONSTANT_MACROS
+ #ifdef _STDINT_H
+  #undef _STDINT_H
+ #endif
+ # include <stdint.h>
+#endif
+}
+
+#include <jni.h>
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+#include <libavutil/pixfmt.h>
+
+#include <stdio.h>
+#include <pthread.h>
+
+#include <android/native_window.h>
+#include <android/native_window_jni.h>
+
+jobject createBitmap(JNIEnv *pEnv, int pWidth, int pHeight) {
+	int i;
+	//get Bitmap class and createBitmap method ID
+	jclass javaBitmapClass = (jclass)(*pEnv)->FindClass(pEnv, "android/graphics/Bitmap");
+	jmethodID mid = (*pEnv)->GetStaticMethodID(pEnv, javaBitmapClass, "createBitmap", "(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;");
+	//create Bitmap.Config
+	//reference: https://forums.oracle.com/thread/1548728
+	const wchar_t* configName = L"ARGB_8888";
+	int len = wcslen(configName);
+	jstring jConfigName;
+	if (sizeof(wchar_t) != sizeof(jchar)) {
+		//wchar_t is defined as different length than jchar(2 bytes)
+		jchar* str = (jchar*)malloc((len+1)*sizeof(jchar));
+		for (i = 0; i < len; ++i) {
+			str[i] = (jchar)configName[i];
+		}
+		str[len] = 0;
+		jConfigName = (*pEnv)->NewString(pEnv, (const jchar*)str, len);
+	} else {
+		//wchar_t is defined same length as jchar(2 bytes)
+		jConfigName = (*pEnv)->NewString(pEnv, (const jchar*)configName, len);
+	}
+	jclass bitmapConfigClass = (*pEnv)->FindClass(pEnv, "android/graphics/Bitmap$Config");
+	jobject javaBitmapConfig = (*pEnv)->CallStaticObjectMethod(pEnv, bitmapConfigClass,
+			(*pEnv)->GetStaticMethodID(pEnv, bitmapConfigClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Bitmap$Config;"), jConfigName);
+	//create the bitmap
+	return (*pEnv)->CallStaticObjectMethod(pEnv, javaBitmapClass, mid, pWidth, pHeight, javaBitmapConfig);
+}
+

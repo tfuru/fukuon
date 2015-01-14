@@ -1,0 +1,85 @@
+// FFmpegUtil.c
+
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+#include <libavutil/pixfmt.h>
+
+#include <stdio.h>
+#include <pthread.h>
+
+#include <jni.h>
+
+#define LOG_TAG "android-ffmpeg-pcm2ogg"
+#define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+#define LOGE(...) __android_log_print(6, LOG_TAG, __VA_ARGS__);
+#define	NUM_ARRAY_ELEMENTS(p)		((int) sizeof(p) / sizeof(p[0]))
+
+const int AVCODEC_MAX_AUDIO_FRAME_SIZE = 192000;
+
+jint naPcm2Ogg(JNIEnv *env, jobject pObj,jbyteArray pcmArr, jbyteArray oggArr) {
+	// Register all formats and codecs
+	av_register_all();
+
+	jboolean b;
+	int i,nSize;
+
+	jbyte* arrSrc=(*env)->GetByteArrayElements(env,pcmArr,&b);
+	jbyte* arrDst=(*env)->GetByteArrayElements(env,oggArr,&b);
+	nSize = (*env)->GetArrayLength(env,pcmArr);
+
+	for(i=0; i<nSize; ++i) {
+		arrDst[i] = arrSrc[i];
+	}
+
+	//pcmをogg等に変換する
+	AVCodec *codec;
+	AVCodecContext *c= NULL;
+	AVFrame decodedFrame = {{0}};
+
+	AVPacket avpkt;
+	av_init_packet(&avpkt);
+	avpkt.data = arrSrc;
+	avpkt.size = nSize;
+
+	codec = avcodec_find_decoder(CODEC_ID_MP3);
+	if(!codec){
+		LOGI("codec not found");
+		return -1;
+	}
+
+	c = avcodec_alloc_context3(codec);
+	c->channels = 2;
+	if(avcodec_open2(c, codec, NULL)<0){
+		LOGI("could not open codec");
+		return -1;
+	}
+	int gotFrame;
+	int consumedBytes = avcodec_decode_audio4(c, &decodedFrame, &gotFrame, &avpkt);
+
+	avcodec_close(c);
+	av_free(c);
+
+	(*env)->ReleaseByteArrayElements(env, pcmArr, arrSrc, 0);
+	(*env)->ReleaseByteArrayElements(env, oggArr, arrDst, 0);
+
+	return 0;
+}
+
+
+jint JNI_OnLoad(JavaVM* pVm, void* reserved) {
+	JNIEnv* env;
+	if ((*pVm)->GetEnv(pVm, (void **)&env, JNI_VERSION_1_6) != JNI_OK) {
+		 return -1;
+	}
+
+	JNINativeMethod nm[1];
+	nm[0].name = "pcm2ogg";
+	nm[0].signature = "([B[B)I";
+	nm[0].fnPtr = (void*)naPcm2Ogg;
+
+	jclass cls = (*env)->FindClass(env, "jp/tf_web/fukuon/FFmpegUtil");
+	//Register methods with env->RegisterNatives.
+	(*env)->RegisterNatives(env, cls, nm, NUM_ARRAY_ELEMENTS(nm));
+	return JNI_VERSION_1_6;
+}

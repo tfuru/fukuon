@@ -1,0 +1,285 @@
+package jp.tf_web.fukuonsample;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import jp.tf_web.fukuon.AudioConfig;
+import jp.tf_web.fukuon.FFmpegUtil;
+import jp.tf_web.fukuon.RecvAudioRunnable;
+import jp.tf_web.fukuon.SendAudioRunnable;
+import jp.tf_web.fukuon.network.NetworkAsyncTask;
+import jp.tf_web.fukuon.network.NetworkWork;
+import jp.tf_web.fukuon.network.model.DeleteUserRequest;
+import jp.tf_web.fukuon.network.model.GetUserRequest;
+import jp.tf_web.fukuon.network.model.PostUserRequest;
+import jp.tf_web.fukuon.network.model.PostUserResponse;
+import jp.tf_web.fukuon.network.model.Response;
+import jp.tf_web.fukuon.network.model.User;
+import android.app.Activity;
+import android.content.res.AssetManager;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private static final String LOG_TAG = "MainActivity";
+	
+	private SendAudioRunnable sendAudioRunnable;
+	private RecvAudioRunnable recvAudioRunnable;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		//自分のIPアドレスを調べる
+		TextView textView1 = (TextView)findViewById(R.id.textView1);
+		setIpAddress( textView1 );
+		
+		//送信先アドレスを設定する
+		InetAddress addr = null;
+		try {
+			addr = InetAddress.getByName("127.0.0.1");
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+			Log.e(LOG_TAG, e.toString());
+		}
+		Log.e(LOG_TAG, "addr:"+addr);
+		
+		//オーディオ送信 Runnable		
+		sendAudioRunnable = new SendAudioRunnable(addr);
+		Log.e(LOG_TAG, "sendAudioRunnable" + sendAudioRunnable);
+		
+		Button btnRec = (Button) findViewById(R.id.btnRec);
+		btnRec.setOnClickListener(clickBtnRec);
+		
+		Button btnPlay = (Button) findViewById(R.id.btnPlay);
+		btnPlay.setOnClickListener(clickBtnPlay);
+		
+		Button btnDeleteUser = (Button) findViewById(R.id.btnDeleteUser);
+		btnDeleteUser.setOnClickListener(clickBtnDeleteUser);
+		
+		Button btnAddUser = (Button) findViewById(R.id.btnAddUser);
+		btnAddUser.setOnClickListener(clickBtnAddUser);
+		
+		Button btnGetUser = (Button) findViewById(R.id.btnGetUser);
+		btnGetUser.setOnClickListener(clickBtnGetUser);
+		
+		Button btnPcm2Ogg = (Button) findViewById(R.id.btnPcm2Ogg);
+		btnPcm2Ogg.setOnClickListener(clickBtnPcm2Ogg);
+	}
+
+	//IPアドレスを画面に設定
+	private void setIpAddress(final TextView txtView){
+		Thread thrd = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				String addr = AudioConfig.getIPAddress();
+				txtView.setText(addr);
+			}
+		});
+		thrd.start();
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+    @Override
+    protected void onPause() {
+        super.onPause();
+		if(sendAudioRunnable != null){
+			//録音停止
+			sendAudioRunnable.stopRecording();
+		}
+		if(recvAudioRunnable != null){
+			//再生停止
+			recvAudioRunnable.stopPlay();
+		}
+    }
+    
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(sendAudioRunnable != null){
+			//録音停止
+			sendAudioRunnable.stopRecording();
+		}
+		if(recvAudioRunnable != null){
+			//再生停止
+			recvAudioRunnable.stopPlay();
+		}
+	}
+	
+	private OnClickListener clickBtnRec = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			//オーディオ送信
+			Thread thrd = new Thread(sendAudioRunnable);
+			thrd.start();
+		}
+	};
+	
+	private OnClickListener clickBtnPlay = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			//オーディオ再生
+			Thread thrd = new Thread(recvAudioRunnable);
+			thrd.start();
+		}
+	};
+
+	//ユーザー追加
+	User loginUser = null;
+	private OnClickListener clickBtnAddUser = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			String server = "nodejs.moe.hm"; 
+			User user = new User("名前","file://sample.jpg","showName",5,"message",0);
+			PostUserRequest req = new PostUserRequest(server,user);
+			
+			NetworkWork resultWork = new NetworkWork(){
+				@Override
+				public void response(Response resp) {
+					if(resp == null) return;
+					//ここで レスポンスからユーザー必要情報を取得する
+					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
+						//
+						PostUserResponse postUserResponse = (PostUserResponse)resp;
+						loginUser = postUserResponse.getUser();
+					}
+				}
+			};
+			
+			//非同期でRequestを実行
+			NetworkAsyncTask task = new NetworkAsyncTask( resultWork );
+			task.execute(req);
+		}
+	};
+	
+	//ユーザー削除
+	private OnClickListener clickBtnDeleteUser = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			if( loginUser == null) return;
+			String server = "nodejs.moe.hm"; 
+			DeleteUserRequest req = new DeleteUserRequest(server,loginUser);
+			
+			NetworkWork resultWork = new NetworkWork(){
+				@Override
+				public void response(Response resp) {
+					if(resp == null) return;
+					//ここで レスポンスからユーザー必要情報を取得する
+					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
+						//
+					}
+				}
+			};
+			
+			//非同期でRequestを実行
+			NetworkAsyncTask task = new NetworkAsyncTask( resultWork );
+			task.execute(req);
+		}
+	};
+	
+	//ユーザー一覧取得
+	private OnClickListener clickBtnGetUser = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			String server = "nodejs.moe.hm"; 
+			GetUserRequest req = new GetUserRequest(server);
+			
+			NetworkWork resultWork = new NetworkWork(){
+				@Override
+				public void response(Response resp) {
+					if(resp == null) return;
+					//ここで レスポンスからユーザー必要情報を取得する
+					if(resp.getStatus().equals(Response.STATUS_SUCCESS)){
+						//
+					}
+				}
+			};
+			
+			//非同期でRequestを実行
+			NetworkAsyncTask task = new NetworkAsyncTask( resultWork );
+			task.execute(req);
+		}
+	};
+	
+	//ファイルを開いて内容を返す
+	public byte[] openAssetFile(String fileName) throws IOException{
+		AssetManager assetManager = getResources().getAssets();
+		byte [] buffer = new byte[1024];
+		ByteArrayOutputStream bout = new ByteArrayOutputStream();
+		InputStream is = assetManager.open(fileName);
+		while(true) {
+			int len = is.read(buffer);
+		    if(len < 0) break;
+		    bout.write(buffer, 0, len);
+		}
+		return bout.toByteArray();
+	}
+	
+	//オーディオ再生
+	public void audioPlay(byte[] src){
+        // バッファサイズを取得
+        int bufSize = AudioTrack.getMinBufferSize(8000,
+        											AudioFormat.CHANNEL_OUT_STEREO,
+        											AudioFormat.ENCODING_PCM_16BIT);
+        // AudioTrackインスタンスを生成
+        AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+        										8000,
+        										AudioFormat.CHANNEL_OUT_STEREO,
+        										AudioFormat.ENCODING_PCM_16BIT,
+        										bufSize,
+        										AudioTrack.MODE_STREAM);
+        // 再生
+        audioTrack.play();
+        audioTrack.write(src, 0, src.length);
+	}
+	
+	private OnClickListener clickBtnPcm2Ogg = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			try{
+				//PCM wavファイルを開く
+				//"pcm_stereo_16ss_8000hz.wav"
+				byte[] pcm = MainActivity.this.openAssetFile("onepoint11.mp3");
+				byte[] ogg = new byte[34*1024];
+				FFmpegUtil.pcm2ogg(pcm, ogg);
+				
+				//再生
+				audioPlay(pcm);
+			}catch (Exception e) {
+				
+			}
+		}
+	};	
+}

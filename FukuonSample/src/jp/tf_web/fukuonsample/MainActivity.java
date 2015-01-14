@@ -1,11 +1,15 @@
 package jp.tf_web.fukuonsample;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 import jp.tf_web.fukuon.AudioConfig;
 import jp.tf_web.fukuon.RecvAudioRunnable;
 import jp.tf_web.fukuon.SendAudioRunnable;
+import jp.tf_web.fukuon.media.FFmpegUtil;
 import jp.tf_web.fukuon.network.NetworkAsyncTask;
 import jp.tf_web.fukuon.network.NetworkWork;
 import jp.tf_web.fukuon.network.model.DeleteUserRequest;
@@ -15,6 +19,11 @@ import jp.tf_web.fukuon.network.model.PostUserResponse;
 import jp.tf_web.fukuon.network.model.Response;
 import jp.tf_web.fukuon.network.model.User;
 import android.app.Activity;
+import android.content.res.AssetManager;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -68,6 +77,8 @@ public class MainActivity extends Activity {
 		Button btnGetUser = (Button) findViewById(R.id.btnGetUser);
 		btnGetUser.setOnClickListener(clickBtnGetUser);
 		
+		Button btnPcm2Ogg = (Button) findViewById(R.id.btnPcm2Ogg);
+		btnPcm2Ogg.setOnClickListener(clickBtnPcm2Ogg);
 	}
 
 	//IPアドレスを画面に設定
@@ -222,5 +233,60 @@ public class MainActivity extends Activity {
 		}
 	};
 	
+	//ファイルを開いて内容を返す
+	public byte[] openAssetFile(String fileName) throws IOException{
+		AssetManager assetManager = getResources().getAssets();
+		byte [] buffer = new byte[1024];
+		ByteArrayOutputStream bout = new ByteArrayOutputStream();
+		InputStream is = assetManager.open(fileName);
+		while(true) {
+			int len = is.read(buffer);
+		    if(len < 0) break;
+		    bout.write(buffer, 0, len);
+		}
+		return bout.toByteArray();
+	}
 	
+	//オーディオ再生
+	public void pcmPlay(byte[] src){
+        // バッファサイズを取得
+        int bufSize = AudioTrack.getMinBufferSize(8000,
+        											AudioFormat.CHANNEL_OUT_STEREO,
+        											AudioFormat.ENCODING_PCM_16BIT);
+        // AudioTrackインスタンスを生成
+        AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+        										8000,
+        										AudioFormat.CHANNEL_OUT_STEREO,
+        										AudioFormat.ENCODING_PCM_16BIT,
+        										bufSize,
+        										AudioTrack.MODE_STREAM);
+        // 再生
+        audioTrack.play();
+        audioTrack.write(src, 0, src.length);
+	}
+	
+	private OnClickListener clickBtnPcm2Ogg = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			try{
+				//mp3をpcmに変換
+				byte[] pcm = new byte[34*1024];
+				{
+					byte[] mp3 = MainActivity.this.openAssetFile("onepoint11_64_mono_8000hz.mp3");
+					FFmpegUtil.mp32pcm(mp3, pcm);
+					//変換したPCMを再生してみる
+					pcmPlay(pcm);
+				}
+				{
+					byte[] mp3 = new byte[34*1024];
+					FFmpegUtil.pcm2mp3(pcm,mp3);
+					//TODO: 戻したmp3を再生してみる
+					
+				}
+				
+			}catch (Exception e) {
+				
+			}
+		}
+	};	
 }

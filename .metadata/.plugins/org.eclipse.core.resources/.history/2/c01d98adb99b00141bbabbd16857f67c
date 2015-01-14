@@ -1,0 +1,14 @@
+package jp.tf_web.fukuon;
+
+public class FFmpegUtil {
+	//pcm形式をogg形式に変換する
+	private static native int pcm2ogg(byte pcm[], byte ogg[]);
+	
+    static {
+    	System.loadLibrary("avutil-52");
+        System.loadLibrary("avcodec-55");
+        System.loadLibrary("avformat-55");
+        System.loadLibrary("swscale-2");
+    	System.loadLibrary("avutil-52");
+    }
+}

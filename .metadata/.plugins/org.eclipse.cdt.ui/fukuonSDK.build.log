@@ -1,0 +1,12 @@
+01:13:59 **** Incremental Build of configuration Default for project fukuonSDK ****
+/Applications/android-ndk-r10d/ndk-build all 
+[armeabi] Install        : libFFmpegUtil.so => libs/armeabi/libFFmpegUtil.so
+[armeabi] Install        : libavformat-56.so => libs/armeabi/libavformat-56.so
+[armeabi] Install        : libavcodec-56.so => libs/armeabi/libavcodec-56.so
+[armeabi] Install        : libswscale-3.so => libs/armeabi/libswscale-3.so
+[armeabi] Install        : libavutil-54.so => libs/armeabi/libavutil-54.so
+[armeabi] Install        : libavfilter-5.so => libs/armeabi/libavfilter-5.so
+[armeabi] Install        : libswresample-1.so => libs/armeabi/libswresample-1.so
+
+01:14:00 Build Finished (took 982ms)
+

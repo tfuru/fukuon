@@ -1,0 +1,52 @@
+// tutorial02.c
+// A pedagogical video player that will stream through every video frame as fast as it can.
+//
+// This tutorial was written by Stephen Dranger (dranger@gmail.com).
+//
+// Code based on FFplay, Copyright (c) 2003 Fabrice Bellard,
+// and a tutorial by Martin Bohme (boehme@inb.uni-luebeckREMOVETHIS.de)
+// Tested on Gentoo, CVS version 5/01/07 compiled with GCC 4.1.1
+//
+// The code is modified so that it can be compiled to a shared library and run on Android
+//
+// The code play the video stream on your screen
+//
+// Feipeng Liu (http://www.roman10.net/)
+// Aug 2013
+
+
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+#include <libavutil/pixfmt.h>
+
+#include <stdio.h>
+#include <pthread.h>
+
+#include <jni.h>
+#include <android/native_window.h>
+#include <android/native_window_jni.h>
+
+#define LOG_TAG "android-ffmpeg-pcm2ogg"
+#define LOGI(...) __android_log_print(4, LOG_TAG, __VA_ARGS__);
+#define LOGE(...) __android_log_print(6, LOG_TAG, __VA_ARGS__);
+
+jint pcm2ogg(JNIEnv *pEnv, jobject pObj,jbyteArray pcmArr, jbyteArray oggArr) {
+	// Register all formats and codecs
+	av_register_all();
+
+	jboolean b;
+	int i;
+
+	jbyte* arrSrc=(*env)->GetByteArrayElements(env,src,&b);
+	jbyte* arrDst=(*env)->GetByteArrayElements(env,dst,&b);
+
+	for(i=0; i<nSize; ++i) {
+		arrDst[i] = arrSrc[i];
+	}
+
+	(*env)->ReleaseByteArrayElements(env, src, arrSrc, 0);
+	(*env)->ReleaseByteArrayElements(env, dst, arrDst, 0);
+
+	return 0;
+}
